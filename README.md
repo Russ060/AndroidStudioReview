@@ -15,7 +15,7 @@ Kotlin Documentation - https://kotlinlang.org/docs/home.html
 
 for a Snackbar, create an ID for your main layout and use the code snippet below:
 
-Image 1 
+![](1.png) 
 
 
 ```bash
@@ -46,19 +46,19 @@ To create a menu, we first have to create its XML file.
 
 Right click on the res folder, click New, and select Android Resource Files.
 
-Image 2
+![](2.png) 
 
 Next, we will name our menu main_menu and select Menu under Resource Type.
 
-Image 3
+![](3.png) 
 
 Clicking OK will create the menu file.
 
-Image 4
+![](4.png)
 
 Now, we can create individual options for our menu. We will create two items; a Hi Message, and a Bye Message.
 
-Image 5
+![](5.png) 
 
 We provide each item with an id, a title, and a command to never show it as an action. If we set showAsAction to true, our two messages will appear alongside each other in the menu tab. Here, we only see them if the user taps on the three dots to open the menu options.
 
@@ -94,7 +94,7 @@ We now have access to the different menu items. We will change the text of these
 
 use the following code snippet to change the menu in the new activity ( look at the onPrepareOptionsMenu override)
 
-image 17
+![](17.png)
 
 # Alert Dialogs
 
@@ -155,26 +155,26 @@ then we create an XML file to use as a template for each item "item_row", thoe f
 * make sure the height of the LinearLayout is "wrap_content"
 * create a textView and give the text view an ID
 
-Image 6
+![](6.png)
 
-Image 7
+![](7.png)
 
-Image 8
+![](8.png)
 
-Image 9
+![](9.png)
 
 create a class as shown in the following images:
 
-Image 10
+![](10.png)
 
-Image 11
+![](11.png)
 
-Image 12
+![](12.png)
 
 now, we need to creat a recyclerview in our mainActivity, let's assume the ID for the recycler view is: rvMain;
 we need to plug the adapter"class" we created to the adapter view as follows:
 
-Image 13
+![](13.png)
 
 
 # Recycler View - updated
@@ -305,11 +305,11 @@ Intents allow us to launch a new activity in Android Studio.
 
 First let's have a look at how to create a new Activity.
 
-image 14
+![](14.png)
 
 Next, we name our activity.
 
-image 15
+![](15.png)
 
 Finally, we add the following code in order to move from our Main Activity to the newly created My Activity:
 
@@ -322,7 +322,7 @@ We will assume that activity_main.xml contains a button, which we will initializ
         } 
 ```
 
-image 16
+![](16.png)
 
 # Floating Action Button
 
@@ -332,14 +332,14 @@ First we need to create a new drawable to use with our Floating Action Button. I
 
 Next, we search for the Floating Action Button in the top-left corner.
 
-image 18
+![](18.png)
 
 Once we drag the button into our Constraint Layout, we need to select an icon for the button. We will use the edit_icon.
 
-image 19
+![](19.png)
 
 We can now place our Floating Action Button and add margins to give it some space.
 
-image 20
+![](20.png)
 
 Go into MainActivity.kt and initialize the Floating Action Button. Then add an OnClickListener that does what you want once the button is pressed.
